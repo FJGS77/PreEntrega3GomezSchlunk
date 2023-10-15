@@ -1,0 +1,51 @@
+footer {
+    grid-area: footer;
+    background-color: #1a1a1ada;
+
+    #email {
+        h3 {
+            @include text-footer;
+            text-align: left;
+
+            span {
+                @include text-footer;
+            }
+        }
+
+    }
+
+    #redes {
+        h3 {
+            @include text-footer;
+            text-align: center;
+
+            #facebook {
+                @include img-facebook;
+            }
+
+            #instagram {
+                @include img-instagram;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1024px) {
+    #email {
+        h3 {
+            font-size: 20px;
+
+            span {
+                font-size: 18px;
+            }
+        }
+
+    }
+
+    #redes {
+        h3 {
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flex-row-space-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@mixin p0-m0{
+    margin: 0%;
+    padding: 0%;
+}
+
+@mixin pl5-pr5{
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@mixin pt5-pb5{
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+@mixin titulos-info{
+    font-size: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: rgb(197, 197, 5);
+    text-align: center;
+}
+
+@mixin parrafos-info{
+    font-size: 18px;
+    padding-top: 2%;
+    color: rgba(153, 153, 1, 0.904);
+    text-align: center;
+}
+
+@mixin text-footer {
+    font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+    font-size: medium;
+    padding: 0%;
+    margin: 0%;
+    text-shadow: 0 0 20px rgb(196, 176, 143)
+}
+
+@mixin img-facebook {
+    width: 40px;
+    height: 40px;
+}
+
+@mixin img-instagram {
+    width: 35px;
+    height: 35px;
+}

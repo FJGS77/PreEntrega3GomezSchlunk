@@ -1,0 +1,130 @@
+.header {
+
+    background-color: #1a1a1a;
+    grid-area: header;
+    @include flex-column-center;
+
+    h1 {
+        text-align: center;
+        margin: 0%;
+        color: rgb(197, 197, 5);
+        font-size: 3em;
+        font-weight: 50px;
+        text-shadow: 0 0 50px rgb(196, 176, 143);
+
+    }
+
+    h2 {
+
+        text-align: center;
+        font-size: small;
+        margin: 0%;
+        color: rgba(170, 170, 31, 0.904);
+        text-decoration: overline;
+        font-style: italic;
+        font-weight: 25px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.navbar {
+
+    background-color: #1a1a1ada;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "nav1 nav2";
+    justify-content: center;
+    align-items: center;
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(216, 216, 143, 0.904);
+
+        &:hover {
+            text-shadow: 0px 0px 30px $textShadowNav;
+        }
+
+        &:focus {
+
+            color: rgb(165, 160, 160);
+            text-shadow: 0px 0px 10px $textShadowNav;
+        }
+
+        &:active {
+            text-shadow: none;
+            color: rgb(119, 39, 39);
+        }
+
+    }
+
+    #nav1 {
+
+        grid-area: nav1;
+        text-align: center;
+
+    }
+
+    #nav2 {
+
+        grid-area: nav2;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .header {
+        grid-area: header;
+        background-color: #1a1a1ada;
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 15px;
+        }
+
+    }
+
+    .navbar {
+        align-items: end;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        h1 {
+            font-size: 65px;
+            text-decoration: underline rgba(170, 170, 31, 0.904);
+            text-decoration-thickness: 2px;
+        }
+
+        h2 {
+            font-size: 20px;
+            text-align: end;
+            padding-right: 5%;
+            text-decoration: none;
+        }
+    }
+
+    .navbar {
+        a {
+
+            font-size: 25px;
+
+        }
+    }
+}
