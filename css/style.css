@@ -34,7 +34,7 @@
   background-color: rgba(26, 26, 26, 0.5254901961);
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 #inicio #imagenInicio .open {
   width: 50%;
@@ -48,8 +48,7 @@
   grid-template-rows: 25vh 10vh auto auto 25vh;
   grid-template-areas: "header" "nav" "misvis" "equipo" "footer";
 }
-
-#objetivos {
+#nosotros #objetivos {
   grid-area: misvis;
   background-color: rgba(44, 43, 43, 0.6705882353);
   display: flex;
@@ -58,21 +57,12 @@
   align-items: center;
   padding: 5% 2% 0% 2%;
 }
-
-#mision {
-  padding: 2% 2% 5% 2%;
-  padding-bottom: 2%;
+#nosotros #objetivos #mision {
+  padding: 2%;
   border-top: 5px double #181313;
   border-bottom: 5px double #181313;
 }
-
-#vision {
-  padding: 2% 2% 5% 2%;
-  padding-bottom: 2%;
-  border-bottom: 5px double #181313;
-}
-
-.titulosInfo {
+#nosotros #objetivos #mision .titulosInfo {
   margin: 0%;
   padding: 0%;
   font-size: 30px;
@@ -81,8 +71,58 @@
   color: rgb(197, 197, 5);
   text-align: center;
 }
-
-.nosotrosInfo {
+#nosotros #objetivos #mision .nosotrosInfo {
+  margin: 0%;
+  padding: 0%;
+  font-size: 18px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  color: rgba(153, 153, 1, 0.904);
+  text-align: center;
+}
+#nosotros #objetivos #vision {
+  padding: 2%;
+  border-bottom: 5px double #181313;
+}
+#nosotros #objetivos #vision .titulosInfo {
+  margin: 0%;
+  padding: 0%;
+  font-size: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: rgb(197, 197, 5);
+  text-align: center;
+}
+#nosotros #objetivos #vision .nosotrosInfo {
+  margin: 0%;
+  padding: 0%;
+  font-size: 18px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  color: rgba(153, 153, 1, 0.904);
+  text-align: center;
+}
+#nosotros #nuestro {
+  padding: 2% 2% 5% 2%;
+  grid-area: equipo;
+  background-color: rgba(44, 43, 43, 0.6705882353);
+}
+#nosotros #nuestro #presentacion {
+  border-bottom: 5px double #181313;
+  padding-bottom: 2%;
+}
+#nosotros #nuestro #presentacion .titulosInfo {
+  margin: 0%;
+  padding: 0%;
+  font-size: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: rgb(197, 197, 5);
+  text-align: center;
+}
+#nosotros #nuestro #presentacion .nosotrosInfo {
   margin: 0%;
   padding: 0%;
   font-size: 18px;
@@ -93,17 +133,6 @@
   text-align: center;
 }
 
-#nuestro {
-  padding: 2% 2% 5% 2%;
-  grid-area: equipo;
-  background-color: rgba(44, 43, 43, 0.6705882353);
-}
-
-#presentacion {
-  border-bottom: 5px double #181313;
-  padding-bottom: 2%;
-}
-
 #sucursales {
   background-image: radial-gradient(circle at 100%, #333, #333 50%, #353434 75%, #353434 75%);
   display: grid;
@@ -111,25 +140,22 @@
   grid-template-rows: 25vh 10vh 10vh auto auto 20vh;
   grid-template-areas: "header" "nav" "encontranos" "primer" "tercera" "footer";
 }
-
-#encontranos {
+#sucursales #encontranos {
   grid-area: encontranos;
 }
-
-#tituloSucursales {
+#sucursales #encontranos #tituloSucursales {
   text-align: center;
   font-size: large;
   padding: 5% 5% 0% 5%;
   text-decoration: none;
   letter-spacing: 0.25em;
   align-items: center;
+  color: rgba(170, 170, 31, 0.904);
 }
-
-#primer {
+#sucursales #primer {
   grid-area: primer;
 }
-
-.sucursales1 {
+#sucursales #primer .sucursales1 {
   padding-top: 5%;
   padding-bottom: 5%;
   display: flex;
@@ -139,12 +165,39 @@
   border-bottom: 2px dashed rgb(172, 172, 4);
   margin: 2% 2% 0% 2%;
 }
-
-#tercera {
+#sucursales #primer .sucursales1 p iframe {
+  box-shadow: 0 0 25px rgb(119, 29, 29);
+}
+#sucursales #primer .sucursales1 ul {
+  padding: 0%;
+  margin: 0%;
+  padding-left: 1rem;
+}
+#sucursales #primer .sucursales1 ul .localidades {
+  padding-right: 1rem;
+  margin: 0%;
+  text-align: center;
+  color: rgb(161, 127, 64);
+  text-shadow: 0 0 40px rgb(133, 120, 97);
+  font-size: medium;
+}
+#sucursales #primer .sucursales1 ul .calles {
+  text-align: center;
+  padding-right: 1rem;
+  text-decoration: double underline rgb(133, 120, 97);
+  color: rgb(133, 120, 97);
+  list-style-type: none;
+}
+#sucursales #primer .sucursales1 ul .datos {
+  list-style-type: none;
+  text-align: center;
+  padding-right: 1rem;
+  color: rgb(133, 120, 97);
+}
+#sucursales #tercera {
   grid-area: tercera;
 }
-
-.sucursales2 {
+#sucursales #tercera .sucursales2 {
   padding-bottom: 5%;
   padding-top: 5%;
   display: flex;
@@ -154,8 +207,15 @@
   border-bottom: 2px solid white;
   border-top: none;
 }
-
-.localidades {
+#sucursales #tercera .sucursales2 p iframe {
+  box-shadow: 0 0 25px rgb(119, 29, 29);
+}
+#sucursales #tercera .sucursales2 ul {
+  padding: 0%;
+  margin: 0%;
+  padding-left: 1rem;
+}
+#sucursales #tercera .sucursales2 ul .localidades {
   padding-right: 1rem;
   margin: 0%;
   text-align: center;
@@ -163,30 +223,18 @@
   text-shadow: 0 0 40px rgb(133, 120, 97);
   font-size: medium;
 }
-
-ul {
-  padding: 0%;
-  margin: 0%;
-  padding-left: 1rem;
-}
-
-.calles {
+#sucursales #tercera .sucursales2 ul .calles {
   text-align: center;
   padding-right: 1rem;
   text-decoration: double underline rgb(133, 120, 97);
   color: rgb(133, 120, 97);
   list-style-type: none;
 }
-
-.datos {
+#sucursales #tercera .sucursales2 ul .datos {
   list-style-type: none;
   text-align: center;
   padding-right: 1rem;
   color: rgb(133, 120, 97);
-}
-
-iframe {
-  box-shadow: 0 0 25px rgb(119, 29, 29);
 }
 
 #contactos {
@@ -197,16 +245,14 @@ iframe {
   grid-template-rows: 25vh 10vh auto 20vh;
   grid-template-areas: "header" "nav" "informacion" "footer";
 }
-
-.contactosTasty {
+#contactos .contactosTasty {
   grid-area: informacion;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 45% 55%;
   grid-template-areas: "cuadros" "areas";
 }
-
-#cuadros {
+#contactos .contactosTasty #cuadros {
   grid-area: cuadros;
   margin: 6% 5% 2% 5%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -214,8 +260,13 @@ iframe {
   flex-direction: column;
   align-items: start;
 }
-
-#areas {
+#contactos .contactosTasty #cuadros input {
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  background-color: rgb(34, 34, 34);
+}
+#contactos .contactosTasty #areas {
   grid-area: areas;
   margin: 2% 5% 6% 5%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -223,22 +274,13 @@ iframe {
   flex-direction: column;
   justify-content: left;
 }
-
-textarea {
+#contactos .contactosTasty #areas textarea {
   border-radius: 5px;
   border: 1px solid black;
   background-color: rgb(34, 34, 34);
 }
-
-input {
-  border: 1px solid black;
-  border-radius: 5px;
-  color: black;
-  background-color: rgb(34, 34, 34);
-}
-
-#enviar {
-  background-color: rgb(110, 110, 5);
+#contactos .contactosTasty #areas #enviar {
+  background-color: rgb(117, 117, 57);
 }
 
 #menu {
@@ -249,49 +291,7 @@ input {
   grid-template-rows: 25vh 10vh auto auto 20vh;
   grid-template-areas: "header" "nav" "titulo" "menu" "footer";
 }
-
-.productos {
-  grid-area: menu;
-  margin: 0% 5% 5% 5%;
-  animation-name: mobile;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
-
-.clasica {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0% 10% 10% 10%;
-  animation-name: mobile;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-}
-
-.tasty {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0% 10% 10% 10%;
-  animation-name: mobile;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-}
-
-.plato {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0% 10% 10% 10%;
-  animation-name: mobile;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-}
-
-.titulo {
+#menu .titulo {
   grid-area: titulo;
   text-align: center;
   font-size: xx-large;
@@ -299,8 +299,14 @@ input {
   padding-top: 5%;
   margin: 0%;
 }
-
-.nombreMenu {
+#menu .productos {
+  grid-area: menu;
+  margin: 0% 5% 5% 5%;
+  animation-name: mobile;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+#menu .productos .carta .nombreMenu {
   text-align: center;
   font-size: 28px;
   margin: 10%;
@@ -309,14 +315,64 @@ input {
   animation-duration: 3s;
   animation-iteration-count: 1;
 }
-
-.nombre {
+#menu .productos .carta .clasica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0% 10% 10% 10%;
+  animation-name: mobile;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+#menu .productos .carta .clasica .nombre {
   font-size: larger;
   margin: 5% 0% 0% 0%;
   color: rgb(43, 31, 14);
 }
-
-.ingredientes {
+#menu .productos .carta .clasica .ingredientes {
+  font-size: medium;
+  margin: 0%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+#menu .productos .carta .tasty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0% 10% 10% 10%;
+  animation-name: mobile;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+#menu .productos .carta .tasty .nombre {
+  font-size: larger;
+  margin: 5% 0% 0% 0%;
+  color: rgb(43, 31, 14);
+}
+#menu .productos .carta .tasty .ingredientes {
+  font-size: medium;
+  margin: 0%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+#menu .productos .carta .plato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0% 10% 10% 10%;
+  animation-name: mobile;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+#menu .productos .carta .plato .nombre {
+  font-size: larger;
+  margin: 5% 0% 0% 0%;
+  color: rgb(43, 31, 14);
+}
+#menu .productos .carta .plato .ingredientes {
   font-size: medium;
   margin: 0%;
   color: rgb(0, 0, 0);
@@ -342,12 +398,12 @@ input {
     grid-template-rows: 25vh 50vh 25vh;
     grid-template-areas: "header nav" "descripcion imagen" "footer footer";
   }
-  #desde {
+  #inicio #desde {
     padding: 0px 5% 0px 5%;
     display: flex;
-    flex-direction: column;
+    display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
   }
   #nosotros {
     background-color: #443c0c;
@@ -355,7 +411,7 @@ input {
     grid-template-rows: 25vh 50vh 25vh;
     grid-template-areas: "header header nav" "misvis misvis equipo" "footer footer footer";
   }
-  #objetivos {
+  #nosotros #objetivos {
     padding: 0%;
     padding-top: 5%;
     padding-left: 5%;
@@ -367,21 +423,39 @@ input {
     border-bottom: 10px double #181313;
     border-left: 10px double #181313;
   }
-  #mision {
+  #nosotros #objetivos #mision {
     padding: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: none;
   }
-  #vision {
+  #nosotros #objetivos #mision .titulosInfo {
+    padding: 0%;
+    text-align: center;
+    font-size: 35px;
+  }
+  #nosotros #objetivos #mision .nosotrosInfo {
+    padding: 0% 6% 0% 6%;
+    font-size: 15px;
+  }
+  #nosotros #objetivos #vision {
     padding: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: none;
   }
-  #nuestro {
+  #nosotros #objetivos #vision .titulosInfo {
+    padding: 0%;
+    text-align: center;
+    font-size: 35px;
+  }
+  #nosotros #objetivos #vision .nosotrosInfo {
+    padding: 0% 6% 0% 6%;
+    font-size: 15px;
+  }
+  #nosotros #nuestro {
     padding: 0%;
     padding-top: 5%;
     padding-right: 5%;
@@ -392,20 +466,20 @@ input {
     border-bottom: 10px double #181313;
     border-right: 10px double #181313;
   }
-  .titulosInfo {
+  #nosotros #nuestro #presentacion {
+    border: none;
+  }
+  #nosotros #nuestro #presentacion .titulosInfo {
     padding: 0%;
     text-align: center;
     font-size: 35px;
   }
-  .nosotrosInfo {
+  #nosotros #nuestro #presentacion #parrafoNuestroEquipo {
+    padding: 0% 3% 0% 3%;
+  }
+  #nosotros #nuestro #presentacion .nosotrosInfo {
     padding: 0% 6% 0% 6%;
     font-size: 15px;
-  }
-  #presentacion {
-    border: none;
-  }
-  #parrafoNuestroEquipo {
-    padding: 0% 3% 0% 3%;
   }
   #sucursales {
     display: grid;
@@ -413,25 +487,35 @@ input {
     grid-template-rows: 25vh 15vh auto auto 20vh;
     grid-template-areas: "header nav" "encontranos encontranos" "primer primer" "tercera tercera" "footer footer";
   }
-  #tituloSucursales {
+  #sucursales #encontranos #tituloSucursales {
     padding: 5% 0% 0% 0%;
     margin: 0%;
     font-size: x-large;
   }
-  .sucursales1 {
+  #sucursales #primer .sucursales1 {
     margin: 5% 5% 0% 5%;
     padding: 0%;
     flex-direction: column;
     border-bottom: 4px double rgb(172, 172, 4);
   }
-  .mapas1 {
+  #sucursales #primer .sucursales1 .mapas1 {
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     margin: 2% 5% 2% 5%;
   }
-  .mapas2 {
+  #sucursales #primer .sucursales1 .mapas1 p iframe {
+    height: 120px;
+    width: 250px;
+  }
+  #sucursales #primer .sucursales1 .mapas1 ul {
+    margin: 5%;
+  }
+  #sucursales #primer .sucursales1 .mapas1 ul .calles {
+    list-style-type: none;
+  }
+  #sucursales #primer .sucursales1 .mapas2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: end;
@@ -439,14 +523,39 @@ input {
     margin: 0% 5% 2% 5%;
     border-top: 4px dashed rgb(187, 187, 187);
   }
-  .mapas3 {
+  #sucursales #primer .sucursales1 .mapas2 p iframe {
+    height: 120px;
+    width: 250px;
+  }
+  #sucursales #primer .sucursales1 .mapas2 ul {
+    margin: 5%;
+  }
+  #sucursales #primer .sucursales1 .mapas2 ul .calles {
+    list-style-type: none;
+  }
+  #sucursales #tercera .sucursales2 {
+    margin: 0% 5% 5% 5%;
+    padding: 0%;
+    flex-direction: column;
+  }
+  #sucursales #tercera .sucursales2 .mapas3 {
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     margin: 2% 5% 5% 5%;
   }
-  .mapas4 {
+  #sucursales #tercera .sucursales2 .mapas3 p iframe {
+    height: 120px;
+    width: 250px;
+  }
+  #sucursales #tercera .sucursales2 .mapas3 ul {
+    margin: 5%;
+  }
+  #sucursales #tercera .sucursales2 .mapas3 ul .calles {
+    list-style-type: none;
+  }
+  #sucursales #tercera .sucursales2 .mapas4 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: end;
@@ -454,19 +563,14 @@ input {
     margin: 0% 5% 2% 5%;
     border-top: 4px dashed rgb(187, 187, 187);
   }
-  .sucursales2 {
-    margin: 0% 5% 5% 5%;
-    padding: 0%;
-    flex-direction: column;
-  }
-  iframe {
+  #sucursales #tercera .sucursales2 .mapas4 p iframe {
     height: 120px;
     width: 250px;
   }
-  ul {
+  #sucursales #tercera .sucursales2 .mapas4 ul {
     margin: 5%;
   }
-  .calles {
+  #sucursales #tercera .sucursales2 .mapas4 ul .calles {
     list-style-type: none;
   }
   #contactos {
@@ -476,23 +580,20 @@ input {
     grid-template-rows: 25vh 55vh 20vh;
     grid-template-areas: "header nav" "informacion informacion" "footer footer";
   }
-  .contactosTasty {
+  #contactos .contactosTasty {
     grid-area: informacion;
     grid-template-columns: 40% 60%;
     grid-template-rows: auto;
     grid-template-areas: "cuadros areas";
   }
-  #cuadros {
+  #contactos .contactosTasty #cuadros {
     margin: 0% 5% 0% 5%;
     align-items: center;
     justify-content: center;
   }
-  #areas {
+  #contactos .contactosTasty #areas {
     margin: 0% 5% 0% 5%;
     justify-content: center;
-  }
-  #enviar {
-    width: 25%;
   }
   #menu {
     background-color: #443c0c;
@@ -502,42 +603,61 @@ input {
     grid-template-rows: 25vh auto auto 20vh;
     grid-template-areas: "header nav" "titulo titulo" "menu menu" "footer footer";
   }
-  .carta {
+  #menu .carta {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .nombreMenu {
+  #menu .carta .nombreMenu {
     font-size: 32px;
-    margin: 10% 10% 5% 10%;
+    margin: 10% 10% 2% 10%;
   }
-  .nombre {
-    font-size: 25px;
-    margin: 0%;
-  }
-  .ingredientes {
-    font-size: 16px;
-    margin: 0% 5% 0% 5%;
-  }
-  .clasica {
+  #menu .carta .clasica {
     padding: 0%;
     height: 215px;
   }
-  .tasty {
-    padding: 0%;
-  }
-  .plato {
-    padding: 0%;
-  }
-  .comida1 {
+  #menu .carta .clasica .comida1 {
     width: 150px;
   }
-  .comida2 {
+  #menu .carta .clasica .nombre {
+    font-size: 25px;
+    margin: 0%;
+  }
+  #menu .carta .clasica .ingredientes {
+    font-size: 16px;
+    margin: 0% 5% 0% 5%;
+  }
+  #menu .carta .tasty {
+    padding: 0%;
+  }
+  #menu .carta .tasty .comida1 {
+    width: 150px;
+  }
+  #menu .carta .tasty .comida2 {
     width: 100px;
   }
-  .comida3 {
+  #menu .carta .tasty .nombre {
+    font-size: 25px;
+    margin: 0%;
+  }
+  #menu .carta .tasty .ingredientes {
+    font-size: 16px;
+    margin: 0% 5% 0% 5%;
+  }
+  #menu .carta .plato {
+    padding: 0%;
+  }
+  #menu .carta .plato .comida3 {
     width: 190px;
+  }
+  #menu .carta .plato .nombre {
+    font-size: 25px;
+    margin: 0%;
+  }
+  #menu .carta .plato .ingredientes {
+    font-size: 16px;
+    margin: 0% 5% 0% 5%;
   }
 }
 @media (min-width: 992px) {
@@ -548,107 +668,142 @@ input {
     background-position: center;
     background-color: rgb(39, 3, 3);
   }
-  .productos {
+  #menu .titulo {
+    background-color: rgba(24, 19, 19, 0.431372549);
+    color: rgba(201, 195, 195, 0.884);
+  }
+  #menu .productos {
     background-color: rgba(24, 19, 19, 0.431372549);
     background-size: cover;
     background-position: center;
     margin: 0%;
     padding: 0% 5% 5% 5%;
   }
-  .titulo {
-    background-color: rgba(24, 19, 19, 0.431372549);
-    color: rgba(201, 195, 195, 0.884);
-  }
-  .nombreMenu {
+  #menu .productos .carta .nombreMenu {
     font-size: 32px;
     margin: 10% 10% 5% 10%;
   }
-  .nombre {
-    font-size: 20px;
-    color: rgba(201, 195, 195, 0.836);
-  }
-  .ingredientes {
-    font-size: 12px;
-    margin: 0% 5% 0% 5%;
-    color: rgba(255, 235, 205, 0.726);
-  }
-  .comida1 {
-    width: 100px;
-    filter: contrast(150%);
-    transition: 1s;
-  }
-  .comida1:hover {
-    filter: contrast(100%);
-  }
-  .comida2 {
-    width: 30%;
-    filter: contrast(150%);
-    transition: 1s;
-  }
-  .comida2:hover {
-    filter: contrast(100%);
-  }
-  .comida3 {
-    width: 100px;
-    filter: contrast(150%);
-    transition: 1s;
-  }
-  .comida3:hover {
-    filter: contrast(100%);
-  }
-  .clasica {
+  #menu .productos .carta .clasica {
     height: auto;
     width: auto;
     transition: 1s;
   }
-  .clasica:hover {
+  #menu .productos .carta .clasica:hover {
     transform: scale(1.3);
   }
-  .tasty {
+  #menu .productos .carta .clasica .comida1 {
+    width: 100px;
+    filter: contrast(150%);
     transition: 1s;
   }
-  .tasty:hover {
-    transform: scale(1.3);
+  #menu .productos .carta .clasica .comida1:hover {
+    filter: contrast(100%);
   }
-  .plato {
+  #menu .productos .carta .clasica .nombre {
+    font-size: 20px;
+    color: rgba(201, 195, 195, 0.836);
+  }
+  #menu .productos .carta .clasica .ingredientes {
+    font-size: 12px;
+    margin: 0% 5% 0% 5%;
+    color: rgba(255, 235, 205, 0.726);
+  }
+  #menu .productos .carta .tasty {
+    padding: 0%;
     transition: 1s;
   }
-  .plato:hover {
+  #menu .productos .carta .tasty:hover {
     transform: scale(1.3);
+  }
+  #menu .productos .carta .tasty .comida1 {
+    width: 100px;
+    filter: contrast(150%);
+    transition: 1s;
+  }
+  #menu .productos .carta .tasty .comida1:hover {
+    filter: contrast(100%);
+  }
+  #menu .productos .carta .tasty .comida2 {
+    width: 30%;
+    filter: contrast(150%);
+    transition: 1s;
+  }
+  #menu .productos .carta .tasty .comida2:hover {
+    filter: contrast(100%);
+  }
+  #menu .productos .carta .tasty .nombre {
+    font-size: 20px;
+    color: rgba(201, 195, 195, 0.836);
+  }
+  #menu .productos .carta .tasty .ingredientes {
+    font-size: 12px;
+    margin: 0% 5% 0% 5%;
+    color: rgba(255, 235, 205, 0.726);
+  }
+  #menu .productos .carta .plato {
+    padding: 0%;
+    transition: 1s;
+  }
+  #menu .productos .carta .plato:hover {
+    transform: scale(1.3);
+  }
+  #menu .productos .carta .plato .comida3 {
+    width: 100px;
+    filter: contrast(150%);
+    transition: 1s;
+  }
+  #menu .productos .carta .plato .comida3:hover {
+    filter: contrast(100%);
+  }
+  #menu .productos .carta .plato .nombre {
+    font-size: 20px;
+    color: rgba(201, 195, 195, 0.836);
+  }
+  #menu .productos .carta .plato .ingredientes {
+    font-size: 12px;
+    margin: 0% 5% 0% 5%;
+    color: rgba(255, 235, 205, 0.726);
   }
 }
 @media (min-width: 1024px) {
   #inicio {
     grid-template-rows: 25vh 55vh 20vh;
   }
-  #desde {
+  #inicio #desde {
     font-size: 25px;
   }
-  .open {
+  #inicio #imagenInicio .open {
     width: 40%;
   }
   #nosotros {
     grid-template-rows: 25vh 55vh 20vh;
   }
-  #nuestro {
+  #nosotros #objetivos {
     padding-top: 5%;
     padding-bottom: 5%;
   }
-  #objetivos {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-  .titulosInfo {
-    font-size: 35px;
+  #nosotros #objetivos .titulosInfo {
     text-decoration: 3px solid underline rgba(153, 153, 1, 0.904);
   }
-  .nosotrosInfo {
+  #nosotros #objetivos .nosotrosInfo {
     padding-top: 5%;
     padding-bottom: 5%;
     font-size: 18px;
   }
-  #presentacion {
+  #nosotros #nuestro {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  #nosotros #nuestro #presentacion {
     padding-bottom: 0%;
+  }
+  #nosotros #nuestro #presentacion .titulosInfo {
+    text-decoration: 3px solid underline rgba(153, 153, 1, 0.904);
+  }
+  #nosotros #nuestro #presentacion .nosotrosInfo {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 18px;
   }
   #sucursales {
     display: grid;
@@ -656,12 +811,11 @@ input {
     grid-template-rows: 25vh 15vh auto auto 20vh;
     grid-template-areas: "header nav" "encontranos encontranos" "primer primer" "tercera tercera" "footer footer";
   }
-  #tituloSucursales {
-    text-decoration: 2px underline double rgb(172, 172, 4);
+  #sucursales #encontranos #tituloSucursales {
     padding-top: 4%;
     font-size: 38px;
   }
-  #primer {
+  #sucursales #primer {
     margin: 0%;
     padding: 0%;
     padding-top: 4%;
@@ -669,70 +823,97 @@ input {
     flex-direction: column;
     justify-content: center;
   }
-  .sucursales1 {
+  #sucursales #primer .sucursales1 {
     display: flex;
     flex-direction: row;
     padding: 0%;
+    border: none;
     margin-top: 2%;
-    border: none;
   }
-  #tercera {
-    grid-area: tercera;
+  #sucursales #primer .sucursales1 .mapas1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-  }
-  .sucursales2 {
-    display: flex;
-    flex-direction: row;
-    padding: 0%;
-    border: none;
-  }
-  .mapas1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
     align-items: center;
     width: 50%;
     margin: 0.25%;
     border-right: 4px dashed rgb(187, 187, 187);
   }
-  .mapas2 {
+  #sucursales #primer .sucursales1 .mapas1 ul .localidades {
+    font-size: 20px;
+  }
+  #sucursales #primer .sucursales1 .mapas1 ul .calles {
+    font-size: 16px;
+  }
+  #sucursales #primer .sucursales1 .mapas1 ul .datos {
+    font-size: 16px;
+  }
+  #sucursales #primer .sucursales1 .mapas2 {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: end;
-    align-items: center;
+    justify-content: center;
     border-top: none;
+    align-items: center;
     width: 50%;
     margin: 0.25%;
     border-left: 4px solid rgb(172, 172, 4);
   }
-  .mapas3 {
+  #sucursales #primer .sucursales1 .mapas2 ul .localidades {
+    font-size: 20px;
+  }
+  #sucursales #primer .sucursales1 .mapas2 ul .calles {
+    font-size: 16px;
+  }
+  #sucursales #primer .sucursales1 .mapas2 ul .datos {
+    font-size: 16px;
+  }
+  #sucursales #tercera {
+    grid-area: tercera;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #sucursales #tercera .sucursales2 {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    padding: 0%;
+    border: none;
+  }
+  #sucursales #tercera .sucursales2 .mapas3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     width: 50%;
     margin: 0.25%;
     border-right: 4px solid rgb(172, 172, 4);
   }
-  .mapas4 {
+  #sucursales #tercera .sucursales2 .mapas3 ul .localidades {
+    font-size: 20px;
+  }
+  #sucursales #tercera .sucursales2 .mapas3 ul .calles {
+    font-size: 16px;
+  }
+  #sucursales #tercera .sucursales2 .mapas3 ul .datos {
+    font-size: 16px;
+  }
+  #sucursales #tercera .sucursales2 .mapas4 {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     width: 50%;
     margin: 0.25%;
     border-top: none;
     border-left: 4px dashed rgb(187, 187, 187);
   }
-  .localidades {
+  #sucursales #tercera .sucursales2 .mapas4 ul .localidades {
     font-size: 20px;
   }
-  .calles {
+  #sucursales #tercera .sucursales2 .mapas4 ul .calles {
     font-size: 16px;
   }
-  .datos {
+  #sucursales #tercera .sucursales2 .mapas4 ul .datos {
     font-size: 16px;
   }
 }

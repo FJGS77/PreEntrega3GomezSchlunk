@@ -19,7 +19,7 @@
         text-align: center;
         font-size: small;
         margin: 0%;
-        color: rgba(170, 170, 31, 0.904);
+        color: $textMustardColor;
         text-decoration: overline;
         font-style: italic;
         font-weight: 25px;
@@ -108,7 +108,7 @@
     .header {
         h1 {
             font-size: 65px;
-            text-decoration: underline rgba(170, 170, 31, 0.904);
+            text-decoration: underline $textMustardColor;
             text-decoration-thickness: 2px;
         }
 

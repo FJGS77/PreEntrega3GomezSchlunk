@@ -4,30 +4,69 @@
     justify-content: center;
 }
 
+@mixin flex-column-start {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+@mixin flex-row-reverse-end {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+}
+
 @mixin flex-row-space-evenly {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-@mixin p0-m0{
+@mixin flex-row-center {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin flex-row-reverse-center{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+
+@mixin p0-m0 {
     margin: 0%;
     padding: 0%;
 }
 
-@mixin pl5-pr5{
+@mixin pl5-pr5 {
 
     padding-left: 5%;
     padding-right: 5%;
 }
 
-@mixin pt5-pb5{
+@mixin pt5-pb5 {
 
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
-@mixin titulos-info{
+@mixin titulos-info {
     font-size: 30px;
     padding-left: 2%;
     padding-right: 2%;
@@ -35,7 +74,7 @@
     text-align: center;
 }
 
-@mixin parrafos-info{
+@mixin parrafos-info {
     font-size: 18px;
     padding-top: 2%;
     color: rgba(153, 153, 1, 0.904);
@@ -59,4 +98,18 @@
 @mixin img-instagram {
     width: 35px;
     height: 35px;
+}
+
+@mixin sucursales-1024px {
+
+    display: flex;
+    flex-direction: row;
+    padding: 0%;
+    border: none;
+}
+
+@mixin mapas {
+    align-items: center;
+    width: 50%;
+    margin: .25%;
 }
