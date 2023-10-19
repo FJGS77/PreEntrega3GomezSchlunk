@@ -134,13 +134,15 @@
 }
 
 #sucursales {
-  background-image: radial-gradient(circle at 100%, #333, #333 50%, #353434 75%, #353434 75%);
+  background-image: url(../assets/images/sucursalesbackground.webp);
+  background-size: cover;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 25vh 10vh 10vh auto auto 20vh;
   grid-template-areas: "header" "nav" "encontranos" "primer" "tercera" "footer";
 }
 #sucursales #encontranos {
+  background-color: rgba(3, 1, 22, 0.5607843137);
   grid-area: encontranos;
 }
 #sucursales #encontranos #tituloSucursales {
@@ -153,6 +155,7 @@
   color: rgba(170, 170, 31, 0.904);
 }
 #sucursales #primer {
+  background-color: rgba(3, 1, 22, 0.5607843137);
   grid-area: primer;
 }
 #sucursales #primer .sucursales1 {
@@ -195,6 +198,7 @@
   color: rgb(133, 120, 97);
 }
 #sucursales #tercera {
+  background-color: rgba(3, 1, 22, 0.5607843137);
   grid-area: tercera;
 }
 #sucursales #tercera .sucursales2 {
@@ -488,7 +492,7 @@
     grid-template-areas: "header nav" "encontranos encontranos" "primer primer" "tercera tercera" "footer footer";
   }
   #sucursales #encontranos #tituloSucursales {
-    padding: 5% 0% 0% 0%;
+    padding: 8% 0% 0% 0%;
     margin: 0%;
     font-size: x-large;
   }
@@ -806,6 +810,7 @@
     font-size: 18px;
   }
   #sucursales {
+    background-position: 50% 60%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25vh 15vh auto auto 20vh;
