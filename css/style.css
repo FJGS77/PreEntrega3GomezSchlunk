@@ -1027,28 +1027,43 @@ footer {
 footer #email h3 {
   font-family: "Courier New", Courier, monospace;
   color: wheat;
-  font-size: medium;
+  font-size: 16px;
   padding: 0%;
   margin: 0%;
   text-shadow: 0 0 20px rgb(196, 176, 143);
   text-align: left;
 }
+@media (min-width: 1024px) {
+  footer #email h3 {
+    font-size: 18px;
+  }
+}
 footer #email h3 span {
   font-family: "Courier New", Courier, monospace;
   color: wheat;
-  font-size: medium;
+  font-size: 16px;
   padding: 0%;
   margin: 0%;
   text-shadow: 0 0 20px rgb(196, 176, 143);
 }
+@media (min-width: 1024px) {
+  footer #email h3 span {
+    font-size: 18px;
+  }
+}
 footer #redes h3 {
   font-family: "Courier New", Courier, monospace;
   color: wheat;
-  font-size: medium;
+  font-size: 16px;
   padding: 0%;
   margin: 0%;
   text-shadow: 0 0 20px rgb(196, 176, 143);
   text-align: center;
+}
+@media (min-width: 1024px) {
+  footer #redes h3 {
+    font-size: 18px;
+  }
 }
 footer #redes h3 #facebook {
   width: 40px;
