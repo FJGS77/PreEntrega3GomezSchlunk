@@ -134,7 +134,7 @@
 }
 
 #sucursales {
-  background-image: url(../assets/images/sucursalesbackground.webp);
+  background-image: url(../assets/images/Sucursalesbackground.webp);
   background-size: cover;
   display: grid;
   grid-template-columns: 100%;
