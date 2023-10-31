@@ -175,7 +175,7 @@
 
     #encontranos {
 
-        background-color: #0301168f;
+        background-color: #030116be;
         grid-area: encontranos;
 
         #tituloSucursales {
@@ -191,7 +191,7 @@
     }
 
     #primer {
-        background-color: #0301168f;
+        background-color: #030116be;
         grid-area: primer;
 
         .sucursales1 {
@@ -232,14 +232,15 @@
                     text-decoration: double underline rgb(133, 120, 97);
                     color: rgb(133, 120, 97);
                     list-style-type: none;
+                    text-shadow: 0 0 1px black;
                 }
 
                 .datos {
                     list-style-type: none;
                     text-align: center;
                     padding-right: 1rem;
-
                     color: rgb(133, 120, 97);
+                    text-shadow: 0 0 30px black;
                 }
 
             }
@@ -247,7 +248,7 @@
     }
 
     #tercera {
-        background-color: #0301168f;
+        background-color: #030116be;
         grid-area: tercera;
 
         .sucursales2 {
@@ -288,13 +289,14 @@
                     text-decoration: double underline rgb(133, 120, 97);
                     color: rgb(133, 120, 97);
                     list-style-type: none;
+                    text-shadow: 0 0 30px black;
                 }
 
                 .datos {
                     list-style-type: none;
                     text-align: center;
                     padding-right: 1rem;
-
+                    text-shadow: 0 0 30px black;
                     color: rgb(133, 120, 97);
                 }
             }
@@ -337,8 +339,9 @@
             input {
                 border: 1px solid black;
                 border-radius: 5px;
-                color: black;
+                color: rgb(216, 216, 216);
                 background-color: rgb(34, 34, 34);
+                width: 100%;
             }
         }
 
@@ -352,6 +355,7 @@
 
             textarea {
                 border-radius: 5px;
+                color: rgb(216, 216, 216);
                 border: 1px solid black;
                 background-color: rgb(34, 34, 34);
             }
@@ -383,6 +387,7 @@
         text-align: center;
         font-size: xx-large;
         color: rgb(48, 2, 2);
+        text-shadow: 0 0 20px rgb(43, 31, 14);
         padding-top: 5%;
         margin: 0%;
     }
@@ -401,6 +406,7 @@
                 font-size: 28px;
                 margin: 10%;
                 color: rgb(167, 153, 132);
+                text-shadow: 0 0 40px rgb(167, 153, 132);
                 animation-name: mobile;
                 animation-duration: 3s;
                 animation-iteration-count: 1;
@@ -416,11 +422,15 @@
                 animation-duration: 5s;
                 animation-iteration-count: 1;
 
+                .comida1 {
+                    width: 120px;
+                }
 
                 .nombre {
                     font-size: larger;
                     margin: 5% 0% 0% 0%;
                     color: rgb(43, 31, 14);
+                    text-shadow: 0 0 20px rgb(43, 31, 14);
                 }
 
                 .ingredientes {
@@ -428,6 +438,7 @@
                     margin: 0%;
                     color: rgb(0, 0, 0);
                     text-align: center;
+                    text-shadow: 0 0 3px rgb(51, 32, 2);
                 }
             }
 
@@ -442,10 +453,19 @@
                 animation-iteration-count: 1;
 
 
+                .comida1 {
+                    width: 120px;
+                }
+
+                .comida2 {
+                    width: 80px;
+                }
+
                 .nombre {
                     font-size: larger;
                     margin: 5% 0% 0% 0%;
                     color: rgb(43, 31, 14);
+                    text-shadow: 0 0 20px rgb(43, 31, 14);
                 }
 
                 .ingredientes {
@@ -453,6 +473,7 @@
                     margin: 0%;
                     color: rgb(0, 0, 0);
                     text-align: center;
+                    text-shadow: 0 0 3px rgb(51, 32, 2);
                 }
 
             }
@@ -467,10 +488,15 @@
                 animation-duration: 5s;
                 animation-iteration-count: 1;
 
+                .comida3 {
+                    width: 140px;
+                }
+
                 .nombre {
                     font-size: larger;
                     margin: 5% 0% 0% 0%;
                     color: rgb(43, 31, 14);
+                    text-shadow: 0 0 20px rgb(43, 31, 14);
                 }
 
                 .ingredientes {
@@ -478,23 +504,11 @@
                     margin: 0%;
                     color: rgb(0, 0, 0);
                     text-align: center;
+                    text-shadow: 0 0 3px rgb(51, 32, 2);
                 }
             }
         }
     }
-}
-
-
-.comida1 {
-    width: 120px;
-}
-
-.comida2 {
-    width: 80px;
-}
-
-.comida3 {
-    width: 140px;
 }
 
 @media (min-width: 768px) {
@@ -772,6 +786,10 @@
                 margin: 0% 5% 0% 5%;
                 align-items: center;
                 justify-content: center;
+
+                input{
+                    width: 80%;
+                }
             }
 
             #areas {
@@ -882,12 +900,12 @@
         background-color: rgb(39, 3, 3);
 
         .titulo {
-            background-color: #1813136e;
+            background-color: #1813139c;
             color: rgba(201, 195, 195, 0.884)
         }
 
         .productos {
-            background-color: #1813136e;
+            background-color: #1813139c;
             background-size: cover;
             background-position: center;
             margin: 0%;
@@ -898,6 +916,7 @@
                 .nombreMenu {
                     font-size: 32px;
                     margin: 10% 10% 5% 10%;
+                    text-shadow: none;
                 }
 
 
